@@ -1,0 +1,15 @@
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      # Not sure we need this
+      # - id: end-of-file-fixer
+      #   files: 'infra/.*|modules/.*'
+      - id: trailing-whitespace
+        files: 'infra/.*|modules/.*'
+      - id: detect-aws-credentials
+      - id: detect-private-key
+  # Gitleaks is a SAST tool for detecting and preventing hardcoded secrets like passwords, api keys, and tokens in git repos.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.2
+    hooks:
+      - id: gitleaks
