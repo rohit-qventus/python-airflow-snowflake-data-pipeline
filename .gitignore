@@ -1,0 +1,21 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Ignore editor files
+.vscode/ # If using VS Code
+.idea/   # If using PyCharm
+
+# Python virtual environment
+venv/
+
+# Operating System files
+.DS_Store # macOS specific
+
+# Data files (if they are generated and not source)
+/data/processed/
+
+#Ignore Environment Variables
+.env/

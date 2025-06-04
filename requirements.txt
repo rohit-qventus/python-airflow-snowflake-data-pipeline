@@ -1,0 +1,18 @@
+apache-airflow==2.9.2           # Pinning to the latest stable 2.x version
+apache-airflow-providers-snowflake
+apache-airflow-providers-microsoft-azure
+# apache-airflow-providers-cncf-kubernetes # Uncomment if you use KubernetesExecutor on Azure (AKS)
+snowflake-connector-python
+pandas
+pyyaml
+
+# Common Azure SDKs you might use directly in your DAGs:
+azure-identity
+azure-storage-blob
+azure-keyvault-secrets
+azure-storage-file-datalake # This is the one for ADLS Gen2
+
+protobuf>=5.0,<6.0 # Explicitly demand protobuf 5.x
+
+#for environment management
+python-dotenv
