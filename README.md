@@ -46,4 +46,9 @@ Follow these steps to set up and run the Airflow environment locally.
 Open your terminal or command prompt and go to the main project directory:
 
 ```bash
-cd /path/to/your/project/python-airflow-snowflake-data-pipeline
+cd /path/to/your/project/python-airflow-snowflake-data-pipeline\
+
+/Users/rohityadav/ry_workspace/dev_ry_python_pipeline/python-airflow-snowflake-data-pipeline/venv/bin/airflow webserver --port 8080
+
+/Users/rohityadav/ry_workspace/dev_ry_python_pipeline/python-airflow-snowflake-data-pipeline/venv/bin/airflow scheduler
+
