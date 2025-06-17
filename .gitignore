@@ -26,4 +26,4 @@ minio_data/
 *.pid
 
 
-.airflow/logs
+/airflow/logs/
