@@ -6,8 +6,15 @@ apache-airflow-providers-snowflake==5.3.0
 apache-airflow-providers-microsoft-azure==8.1.0
 # apache-airflow-providers-cncf-kubernetes==7.4.0  # Uncomment if using KubernetesExecutor
 
+apache-airflow-providers-http
+kaggle
+pandas
+scikit-learn
+
 # Database Connectors
 snowflake-connector-python==3.7.0  # Pinned to maintain compatibility with Snowflake provider
+
+"apache-airflow[postgres]" psycopg2-binary
 
 # Data Processing
 pandas==2.1.3  # Pinned to avoid potential breaking changes
@@ -23,12 +30,22 @@ azure-storage-blob==12.19.0
 azure-keyvault-secrets==4.7.0
 azure-storage-file-datalake==12.14.0  # ADLS Gen2 support
 
+#Amazon S3 Dependencies
+boto3==1.28.60  # Pinned to avoid yanked version 1.28.59 (CVE-2024-35195)
+
+apache-airflow-providers-amazon
+
+
 # Dependency Management
 protobuf>=5.26.0,<6.0.0  # Explicit version range for compatibility
 python-dotenv==1.0.0  # Environment management
 
 
-"apache-airflow[cncf.kubernetes]"
+apache-airflow[cncf.kubernetes]
+
+# Kaggle API for data retrieval
+kaggle
+kagglehub
 
 # Security Considerations:
 # All packages are pinned to specific versions to ensure:

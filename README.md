@@ -52,3 +52,7 @@ cd /path/to/your/project/python-airflow-snowflake-data-pipeline\
 
 /Users/rohityadav/ry_workspace/dev_ry_python_pipeline/python-airflow-snowflake-data-pipeline/venv/bin/airflow scheduler
 
+
+
+# to do -- 
+Add the commands to start minio, postgres, airflow webserver, airflow scheduler to a file so that these can run together

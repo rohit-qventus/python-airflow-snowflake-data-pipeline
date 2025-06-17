@@ -19,3 +19,10 @@ venv/
 
 #Ignore Environment Variables
 .env/
+
+minio_data/
+
+
+*.pid
+
+logs/
